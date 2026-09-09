@@ -14,7 +14,7 @@ const Dashboard = () => {
       return
     }
 
-    fetch('http://localhost:5000/dashboard', { headers: { Authorization: token } })
+    fetch("https://ehtionexa.onrender.com", { headers: { Authorization: token } })
       .then(async (response) => {
         const result = await response.json()
         if (!response.ok) throw new Error(result.message || 'Unable to load dashboard.')
