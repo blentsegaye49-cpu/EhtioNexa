@@ -46,7 +46,7 @@ const Jobseeker = () => {
     setIsSubmitting(true);
     const Jobseeker = { FirstName, LastName, Gender, Phonenumber, EmailAddress, DateofBirth, City, Field, WorkExperience, UniversityCollege, GraduationYear, CV };
 
-    fetch('http://localhost:5000/Jobseekers/', {
+    fetch("https://ehtionexa.onrender.com", {
       method: 'POST',
       headers: { "Content-Type": "application/json", Authorization: authUser.token },
       body: JSON.stringify(Jobseeker)
