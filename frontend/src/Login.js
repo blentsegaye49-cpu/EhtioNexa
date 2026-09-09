@@ -29,7 +29,7 @@ const Login = () => {
       const payload = mode === 'login'
         ? { username, password }
         : { username, email, password, role }
-      const response = await fetch(`http://localhost:5000${endpoint}`, {
+      const response = await fetch("https://ehtionexa.onrender.com"`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload)
