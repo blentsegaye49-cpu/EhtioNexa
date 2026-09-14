@@ -42,7 +42,7 @@ const Company = () => {
     setIsSubmitting(true);
     const company = { CompanyName, Phonenumber, EmailAddress, Companylocation, Companytype, WorkField, Numberofemployees, Companydiscription };
 
-    fetch("https://ehtionexa.onrender.com", {
+    fetch("https://ehtionexa.onrender.com/Companies", {
       method: 'POST',
       headers: { "Content-Type": "application/json", Authorization: authUser.token },
       body: JSON.stringify(company)
